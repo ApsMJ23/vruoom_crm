@@ -27,7 +27,7 @@ export default function Home() {
                     Start For Free Today
                   </span>
                 </Button>
-                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
+                <h1 className="text-5xl md:text-8xl mb-10  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
                   Automate Your Work With Fuzzie
                 </h1>
               </div>
@@ -35,16 +35,18 @@ export default function Home() {
           />
         </div>
       </section>
+      <section className="flex flex-col items-center justify-center w-full">
       <InfiniteMovingCards
-        className="md:mt-[25rem] mt-[10rem]"
+        className="md:mt-[20rem] mt-[10rem]"
         items={clients}
         direction="right"
         speed="slow"
       />
+      </section>
       <section>
         <HeroParallax products={products} />
       </section>
-      <section >
+      <section className="px-20 mx-20">
         <LampComponent/>
         <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 -mt-72">
           <CardContainer className="inter-var ">
@@ -54,7 +56,7 @@ export default function Home() {
                 className="text-xl font-bold text-neutral-600 dark:text-white "
               >
                 Hobby
-                <h2 className="text-6xl ">$0</h2>
+                <h2 className="text-6xl ">Rs.0</h2>
               </CardItem>
               <CardItem
                 translateZ="60"
@@ -101,7 +103,7 @@ export default function Home() {
                 className="text-xl font-bold text-neutral-600 dark:text-white "
               >
                 Pro Plan
-                <h2 className="text-6xl ">$29</h2>
+                <h2 className="text-6xl ">Rs.290</h2>
               </CardItem>
               <CardItem
                 translateZ="60"
@@ -148,7 +150,7 @@ export default function Home() {
                 className="text-xl font-bold text-neutral-600 dark:text-white "
               >
                 Unlimited
-                <h2 className="text-6xl ">$99</h2>
+                <h2 className="text-6xl ">Rs.990</h2>
               </CardItem>
               <CardItem
                 translateZ="60"
